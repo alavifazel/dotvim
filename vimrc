@@ -7,3 +7,8 @@ set number
 
 syntax on
 colorscheme koehler 
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
