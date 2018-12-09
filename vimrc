@@ -18,3 +18,9 @@ Plugin 'itchyny/lightline.vim'
 call vundle#end()            " required
 
 filetype plugin indent on    " required
+
+" sets clipboard as the default register
+set clipboard=unnamedplus
+
+" Makes vim run python scripts with F9
+nnoremap <buffer> <F9> :exec '!python3' shellescape(@%, 1)<cr>
