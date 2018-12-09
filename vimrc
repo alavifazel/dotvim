@@ -24,3 +24,7 @@ set clipboard=unnamedplus
 
 " Makes vim run python scripts with F9
 nnoremap <buffer> <F9> :exec '!python3' shellescape(@%, 1)<cr>
+
+" maps dd to blackhole register. Now to cut things: v/V + x
+nnoremap d "_d
+vnoremap d "_d
