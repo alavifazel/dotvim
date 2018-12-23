@@ -16,6 +16,7 @@ Plugin 'dracula/vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'itchyny/lightline.vim'
 Plugin 'fcpg/vim-orbital'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 
@@ -46,3 +47,6 @@ set guifont=Monospace\ 14
 set guioptions-=m
 
 set number
+
+autocmd vimenter * NERDTree "automatically opens NERDTree on startup
+
