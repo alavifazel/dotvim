@@ -4,7 +4,8 @@ If you're using Linux/Mac and you have git installed, run the *installer.sh*. It
 
 ## Colorscheme
 This config uses [vim-orbital](github.com/fcpg/vim-orbital) colorscheme. The colors are as follows:
-|         ||
+
+|Hex||
 |-------|--------|
 |#000000|#262626|
 |#5f5f5f|#949494|
