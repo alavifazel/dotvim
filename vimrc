@@ -1,3 +1,14 @@
+"Some important properties of this config:
+"d/dd doesn't cut the text; it deletes it. To cut stuff use Visual Mode + x
+"Vim won't get it's own buffer. It uses systems clipboard. So cutting/pasting
+"stuff from Vim to other apps and vice versa will be convenient.
+
+
+"Some cheatsheets on how to use NERDTree, etc
+"To create/rename/delete a file/directory navigate to NERDTree window with: Ctrl + ww
+"Then press m and the options appears. Now choose the option you want. 
+
+
 set autowrite
 set laststatus=2
 set number
@@ -43,7 +54,7 @@ vnoremap d "_d
 
 colorscheme orbital
 
-set guifont=Monospace\ 14
+set guifont=Monospace\ 13
 set guioptions-=m
 
 set number
