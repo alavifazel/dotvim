@@ -1,6 +1,6 @@
 This is my optimal Vim config. For more info, see the commented lines at the beginning of the *vimrc* file.
 ## Installation
-If you're using Linux/Mac and you have git installed, run the *installer.sh*. It will install Vundle for you and **overwrites** your vim config with this one. If you're not using Windows, manually install Vundle and replace your vimrc file with the one in this repo.
+If you're using Linux/Mac and you have git installed, run the *installer.sh*. It will install Vundle for you and **overwrites** your vim config with this one. If you're using Windows, manually install Vundle and replace your vimrc file with the one in this repo.
 
 ## Colorscheme
 This config uses [vim-orbital](github.com/fcpg/vim-orbital) colorscheme. The colors are as follows:
