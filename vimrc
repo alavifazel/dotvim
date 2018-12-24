@@ -37,7 +37,7 @@ set clipboard=unnamedplus
 
 nnoremap <buffer> <F9> :exec '!python3' shellescape(@%, 1)<cr>
 
-" maps dd to blackhole register. Now to cut things: v/V + x
+"Maps dd to blackhole register. Now to cut things: v/V + x
 nnoremap d "_d
 vnoremap d "_d
 
@@ -48,5 +48,11 @@ set guioptions-=m
 
 set number
 
-autocmd vimenter * NERDTree "automatically opens NERDTree on startup
+autocmd vimenter * NERDTree "Automatically opens NERDTree on startup
 
+"Puts cursor in the editing butter on startup
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
+"Quits the NERDTree as the last buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif 
