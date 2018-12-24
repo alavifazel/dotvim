@@ -28,6 +28,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'itchyny/lightline.vim'
 Plugin 'fcpg/vim-orbital'
 Plugin 'scrooloose/nerdtree'
+Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()            " required
 

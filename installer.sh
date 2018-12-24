@@ -1,9 +1,22 @@
 #!/bin/sh
-echo "Installing the config..."
+echo Installing Vundle...
+
+currentDirectory=$PWD
 
 # Installs Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -d ~/.vim/bundle/Vundle.vim ] ; then
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+else
+	echo Vundle already installed! Trying to update it...
+	cd ~/.vim/bundle/Vundle.vim
+	git pull https://github.com/VundleVim/Vundle.vim.git
+	cd $currentDirectory
+fi
+
+# Installs Jedi (Autocompletion for Python)
+pip install jedi
 
 cat ./vimrc > ~/.vimrc
 
+printf "\n\n"
 echo "Installation complete. Don't forget to run :PluginInstall first time you open it."
