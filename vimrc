@@ -58,8 +58,6 @@ colorscheme orbital
 set guifont=Monospace\ 13
 set guioptions-=m
 
-set number
-
 autocmd vimenter * NERDTree "Automatically opens NERDTree on startup
 
 "Puts cursor in the editing butter on startup

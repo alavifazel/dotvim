@@ -1,4 +1,13 @@
-This is my optimal Vim config. For more info, see the commented lines at the beginning of the *vimrc* file.
+This is my optimal Vim config. Some of the main configs are as follows: 
+
+* d/dd doesn't cut the text; it deletes it (to cut, use Visual Mode + x)
+* Vim won't uses it's own buffer; it'll use systems clipboard. So cutting/pasting stuff from Vim to other apps and vice versa will be convenient.
+* F9 runs and shows the output of the Python script currently opened by Vim.
+* No toolbar on GVim.
+* NERDTree automatically opens on Vim startup.
+
+For more info, see the commented lines at the beginning of the *vimrc* file.
+
 ## Installation
 If you're using Linux/Mac and you have git installed, run the *installer.sh*. It will install Vundle for you and **overwrites** your vim config with this one. If you're using Windows, manually install Vundle and replace your vimrc file with the one in this repo.
 
