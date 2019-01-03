@@ -1,5 +1,5 @@
 #!/bin/sh
-echo Installing Vundle...
+echo Trying to installing Vundle...
 
 currentDirectory=$PWD
 
@@ -20,4 +20,4 @@ pip install jedi
 cat ./vimrc > ~/.vimrc
 
 printf "\n\n"
-echo "Installation complete. Don't forget to run :PluginInstall first time you open it."
+echo "Installation complete. Don't forget to run :PluginInstall after your launched Vim."
