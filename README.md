@@ -5,7 +5,7 @@ This is my optimal Vim config. Some of the main configs are as follows:
 * F9 runs and shows the output of the Python script currently opened by Vim.
 * No toolbar on GVim.
 * NERDTree automatically opens on Vim startup.
-
+* Saving file can be done by C-s keyboard shortcut other than :w .
 For more info, see the commented lines at the beginning of the *vimrc* file.
 
 ## Installation

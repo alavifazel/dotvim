@@ -66,3 +66,22 @@ autocmd VimEnter * wincmd p
 
 "Quits the NERDTree as the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif 
+
+"Remapping C-s to save the file. Note that pressing those key in a terminal
+"will most likely makes it freeze. Disabling of this behavior is done by the
+"installer.sh (by appending 'stty -ixon' to end of .bashrc)
+
+command -nargs=0 -bar Update if &modified 
+                           \|    if empty(bufname('%'))
+                           \|        browse confirm write
+                           \|    else
+                           \|        confirm write
+                           \|    endif
+                           \|endif
+
+nnoremap <silent> <C-S> :<C-u>Update<CR>
+inoremap <c-s> <c-o>:Update<CR>
+
+"Makes Vim/GVim to be opened maximized.
+set lines=999 columns=999
+
